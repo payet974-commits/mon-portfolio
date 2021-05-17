@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+         {% block stylesheets %}
+         {% endblock %}   
+    </head>
+    <body>
+       
+        {% include 'components/navbar.html.twig' %}
+        <div class='container'>
+         {% block body %}{% endblock %}
+         {% block javascripts %}
+         {% endblock %}
+        </div>
+    </body>
+     
+</html>
